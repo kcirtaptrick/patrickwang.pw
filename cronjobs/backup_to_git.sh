@@ -14,7 +14,7 @@ git add .
 echo '>> git commit -m "Backup on $DATE"'
 git commit -m "Backup on $DATE"
 
-INFO=`echo Z2l0IHB1c2ggaHR0cHM6Ly9rY2lydGFwdHJpY2s6THVjazE1MjQzR29vZEBnaXRodWIuY29tIG1hc3Rlcg== | base64 -d`
+INFO=`echo aHR0cHM6Ly9rY2lydGFwdHJpY2s6THVjazE1MjQzR29vZEBnaXRodWIuY29tL2tjaXJ0YXB0cmljay9wYXRyaWNrd2FuZy5wdy5naXQK | base64 -d`
 
 echo '>> $INFO'
 eval $INFO
