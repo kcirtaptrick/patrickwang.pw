@@ -3,7 +3,7 @@
 echo '>> cd ~/public_html/'
 cd ~/public_html/
 
-DATE=date '+%m-%d-%Y %H:%M:%S'
+DATE=`date '+%m-%d-%Y %H:%M:%S'`
 
 echo '>> echo "Backup to git: $DATE UTC" >> log.txt'
 echo "Backup to git: $DATE UTC" >> log.txt
