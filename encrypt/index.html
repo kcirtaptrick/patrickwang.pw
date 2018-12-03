@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>AES Encryption</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+    var encrypt = (() => {
+      document.querySelector('textarea[placeholder=\'Result\']').value = CryptoJS.AES.encrypt(document.querySelector('textarea[placeholder=\'Message\']').value, document.querySelector('input').value);
+    });
+    var decrypt = (() => {
+      document.querySelector('textarea[placeholder=\'Result\']').value = CryptoJS.AES.decrypt(document.querySelector('textarea[placeholder=\'Message\']').value, document.querySelector('input').value).toString(CryptoJS.enc.Utf8);
+    });
+  </script>
+</head>
+<body>
+  <header>AES Encryption</header>
+  <textarea placeholder="Message"></textarea><br>
+  <input type="password" placeholder="Password">
+  <button onclick="encrypt()">Encrypt</button>
+  <button onclick="decrypt()">Decrypt</button><br>
+  <textarea placeholder="Result"></textarea>
+</body>
+</html>

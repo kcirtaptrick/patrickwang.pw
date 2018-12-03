@@ -1,0 +1,81 @@
+body.inline {
+  display: inline-flex;
+  width: 100%;
+}
+#widget-searchbar {
+  border: 0;
+  width: calc(100% - 40px);
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  transition-duration: 0.5s;
+}
+#widget-searchbar:focus {
+  background-color: white;
+  outline: none;
+  box-shadow: 0 0 15px 0 #eee;
+}
+
+
+#coin-widgets {
+  width: calc(75vw - 45px);
+}
+#coin-widgets header div{
+    width: 80px;
+}
+.coinmarketcap-currency-widget {
+  margin: 10px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.links {
+  width: calc(25vw - 20px);
+  height: 500px;
+  max-height: 700px;
+  text-decoration: none;
+  position: fixed;
+  float: right;
+  margin-left: 75vw;
+}
+.links a{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #888;
+  margin: 5px;
+}
+.links a h2{
+  text-align: center;
+  margin: 5px 0 -3px 0;
+  font-size: 18px;
+}
+.links a p{
+  text-align: left;
+  margin: 0;
+  font-size: 13px;
+  word-wrap: break-word;
+}
+.links img {
+  margin: 20px 0 20px 13%;
+}
+#pools header div {
+  width: 65px;
+}
+
+#wallets header div {
+  width: 85px;
+}
+#ad header div {
+    width: 175px;
+}
+#ad a, #ad img{
+    display: block;
+    margin: 0 auto;
+}
+.coinhive-miner {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
